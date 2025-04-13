@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import SidebarLayout from "../componets/SidebarLayout"
+import Prueba from "@/componets/AntLayout"
 
 export const metadata: Metadata = {
   title: "Gestión de Actividades",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <SidebarLayout>{children}</SidebarLayout>
+        <Prueba>{children}</Prueba>
       </body>
     </html>
   )

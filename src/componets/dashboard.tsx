@@ -82,9 +82,9 @@ export default function Dashboard() {
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div>
-              <Label htmlFor="anioInicio">Año Inicio</Label>
+              <Label className="mb-2" htmlFor="anioInicio">Año Inicio</Label>
               <Select value={filtros.anioInicio} onValueChange={(value) => handleFiltroChange("anioInicio", value)}>
-                <SelectTrigger id="anioInicio">
+                <SelectTrigger id="anioInicio" className="w-full">
                   <SelectValue placeholder="Año" />
                 </SelectTrigger>
                 <SelectContent>
@@ -95,12 +95,12 @@ export default function Dashboard() {
               </Select>
             </div>
             <div>
-              <Label htmlFor="semestreInicio">Semestre Inicio</Label>
+              <Label className="mb-2" htmlFor="semestreInicio">Sem Inicio</Label>
               <Select
                 value={filtros.semestreInicio}
                 onValueChange={(value) => handleFiltroChange("semestreInicio", value)}
               >
-                <SelectTrigger id="semestreInicio">
+                <SelectTrigger id="semestreInicio" className="w-full">
                   <SelectValue placeholder="Sem" />
                 </SelectTrigger>
                 <SelectContent>
@@ -110,9 +110,9 @@ export default function Dashboard() {
               </Select>
             </div>
             <div>
-              <Label htmlFor="anioFin">Año Final</Label>
+              <Label className="mb-2" htmlFor="anioFin">Año Final</Label>
               <Select value={filtros.anioFin} onValueChange={(value) => handleFiltroChange("anioFin", value)}>
-                <SelectTrigger id="anioFin">
+                <SelectTrigger id="anioFin" className="w-full">
                   <SelectValue placeholder="Año" />
                 </SelectTrigger>
                 <SelectContent>
@@ -123,9 +123,9 @@ export default function Dashboard() {
               </Select>
             </div>
             <div>
-              <Label htmlFor="semestreFin">Semestre Final</Label>
+              <Label className="mb-2" htmlFor="semestreFin">Sem Final</Label>
               <Select value={filtros.semestreFin} onValueChange={(value) => handleFiltroChange("semestreFin", value)}>
-                <SelectTrigger id="semestreFin">
+                <SelectTrigger id="semestreFin" className="w-full">
                   <SelectValue placeholder="Sem" />
                 </SelectTrigger>
                 <SelectContent>
@@ -135,9 +135,9 @@ export default function Dashboard() {
               </Select>
             </div>
             <div>
-              <Label htmlFor="tipo">Tipo</Label>
+              <Label className="mb-2" htmlFor="tipo">Tipo</Label>
               <Select value={filtros.tipo} onValueChange={(value) => handleFiltroChange("tipo", value)}>
-                <SelectTrigger id="tipo">
+                <SelectTrigger id="tipo" className="w-full">
                   <SelectValue placeholder="Todos los tipos" />
                 </SelectTrigger>
                 <SelectContent>
